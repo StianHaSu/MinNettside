@@ -1,5 +1,7 @@
 <script setup lang="ts">
-
+function goToGithub(){
+    window.open("https://github.com/StianHaSu/MinNettside", "_blank");
+}
 </script>
 <template>
     <div>
@@ -36,6 +38,24 @@
                     som splittes til flere zombier når de dør.
                 </p>
             </li>
+            <li class ="Nettside">
+                <h1 class="text-4xl static text-center">Denne nettsiden!</h1>
+                <p class="text-lg static text-center">
+                    Denne nettsiden er et pågående prosjekt jeg påstartet 23.mai 2022 for å
+                    lære meg rammeverket Vue 3 og tailwind. Verktøyene som blir tatt i bruk
+                    for å lage denne nettsiden er: <br> <br>
+                    <scoped class="text-black my-8">
+                    Vue js 3 <br>
+                    tailwindcss <br>
+                    Vite <br>
+                    Typescript <br>
+                    Github <br>
+                    </scoped> <br>
+
+                    Besøk gjern <button class="KnappGH" @click="goToGithub()">Github</button> profilen min for å se kildekoden til denne
+                    nettsiden!
+                </p>
+            </li>
         </ul>
     </div>
 </template>
@@ -47,4 +67,21 @@
     py-20
     ;
 }
+
+.Nettside {
+    @apply
+    space-y-10
+    font-mono font-bold text-white
+    my-32 bg-gradient-to-b from-emerald-400 to-hoved rounded-lg 
+    px-8 py-8 shadow-md shadow-black
+    mx-6
+}
+
+.KnappGH {
+    @apply
+    font-bold font-mono text-lg
+    hover:scale-105 
+
+}
+
 </style>
