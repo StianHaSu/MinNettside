@@ -3,5 +3,5 @@
 @tailwind utilities;
 body {
     @apply
-    bg-gradient-to-r from-emerald-200 to-cyan-300 h-screen
+    bg-gradient-to-r from-emerald-100 to-cyan-200 h-screen
 } 
