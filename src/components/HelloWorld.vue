@@ -9,19 +9,29 @@ import Banner from './Banner.vue'
 <div>
     <Banner></Banner>
   <div class="info">
-    <div class=" mx-32 my-32 w-2/5 h-56 bg-gradient-to-r from-emerald-200 to-hoved shadow-xl shadow-emerald-700 rounded-2xl">
+    <div class=" mx-32 my-32 w-2/5 h-56 bg-gradient-to-r from-emerald-300 to-hoved shadow-md shadow-black rounded-2xl">
       <div>
         <ul>
           <li>
-            <h2 class="text-white text-center font-mono py-8 text-2xl underline">Velkommen til min nettside!</h2>
-            <ul class="text-center text-white text-xl font-mono">
+            <h2 class="text-white text-center font-mono py-8 text-3xl underline">Velkommen til min nettside!</h2>
+            <ul class="text-center text-xl font-mono">
               <li>
-                <h2>Bli kjent med prosjektene mine</h2>
-                <h2>Kontakt meg gjerne for spørsmål</h2>
-                <h2>Ansett meg</h2>
+                <h2>1. Bli kjent med prosjektene mine</h2>
+                <h2>2. Kontakt meg gjerne for spørsmål</h2>
+                <h2>3. Ansett meg</h2>
               </li>
             </ul>
           </li>
+        </ul>
+      </div>
+      <div class="BoksTo">
+        <ul>
+          <li class="my-6"><h1 class="text-white text-3xl font-mono underline">Dette er et pågående prosjekt</h1></li>
+          <li ><h2>Dette prosjektet blå påbegynt 23.mai 2022</h2></li>
+          <li><h2>Hensikten med denne nettsiden er både å lære <br>
+            vue + tailwind, og å vise frem ferdigheter jeg innehar
+            innen programmering.
+          </h2></li>
         </ul>
       </div>
     </div>
@@ -35,15 +45,14 @@ import Banner from './Banner.vue'
   @tailwind utilities;
 
 
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
+.BoksTo {
+  @apply
+  my-24 bg-gradient-to-r
+  from-emerald-300 to-hoved
+  rounded-2xl text-center
+  font-mono text-xl py-2
+  shadow-md shadow-black
+
 }
 
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
 </style>

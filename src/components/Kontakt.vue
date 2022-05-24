@@ -33,12 +33,12 @@ function goToGithub(){
 <style>
 .kontaktInfo {
     @apply
-    text-left font-mono text-5xl 
-    bg-gradient-to-b from-emerald-400 to-hoved mx-40 
-    py-8 px-28 my-6
-    rounded-2xl text-white border-emerald-200
+    font-mono text-5xl 
+    bg-gradient-to-b from-emerald-300 to-hoved mx-40 
+    py-8 px-28 my-6 
+    rounded-2xl border-emerald-200
     shadow-lg shadow-black
-    space-y-4 
+    space-y-4 text-center
     ;
 }
 

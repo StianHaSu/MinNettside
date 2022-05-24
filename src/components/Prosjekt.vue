@@ -39,7 +39,7 @@ function goToGithub(){
                 </p>
             </li>
             <li class ="Nettside">
-                <h1 class="text-4xl static text-center">Denne nettsiden!</h1>
+                <h1 class="text-4xl static text-center underline">Denne nettsiden!</h1>
                 <p class="text-lg static text-center">
                     Denne nettsiden er et pågående prosjekt jeg påstartet 23.mai 2022 for å
                     lære meg rammeverket Vue 3 og tailwind. Verktøyene som blir tatt i bruk
@@ -55,6 +55,12 @@ function goToGithub(){
                     Besøk gjern <button class="KnappGH" @click="goToGithub()">Github</button> profilen min for å se kildekoden til denne
                     nettsiden!
                 </p>
+            </li>
+            <li>
+                <APPLET 
+                    archive="./Spill_java.jar"
+                    code="Spill_java.MainSpill.class">
+                </APPLET>
             </li>
         </ul>
     </div>

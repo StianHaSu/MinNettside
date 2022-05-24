@@ -30,30 +30,36 @@
 
 .Overskrift{
     @apply
-    font-mono font-bold
-    text-white text-4xl
-    flex justify-center
-    py-12 my-12 mx-24
-    bg-gradient-to-b from-emerald-400 to-hoved
-    rounded-md shadow-sm shadow-black
-
-    ;
+    font-mono font-extrabold
+    text-center
+    text-white text-8xl
+    mx-24 my-4
+    text-transparent bg-clip-text
+    bg-gradient-to-tr
+    from-gray-500 via-emerald-400 to-hoved
+    
 }
 
 .Text{
     @apply
     flex justify-center
-    text-white
     py-14 px-14
-    text-2xl mx-72
+    text-2xl 
     font-mono
+    bg-gradient-to-r from-emerald-300 to-hoved
+    rounded-md mx-72 h-screen
    
+}
+
+.Avsnitt {
+    @apply
+    mx-32
 }
 
 .hoved {
     @apply
-    bg-gradient-to-r from-emerald-400 to-hoved
-    rounded-md py-8 mx-32
+    my-20
 }
+
 
 </style>
