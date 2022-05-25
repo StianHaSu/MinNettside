@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import Banner from './Banner.vue'
 function goToLinkedIn() {
-    window.open("https://www.linkedin.com/in/stian-sundkvist-54910a19a/", "_blank");
+    window.open("https://www.linkedin.com/in/stian-sundkvist", "_blank");
 }
 function goToGithub(){
     window.open("https://github.com/StianHaSu", "_blank");
