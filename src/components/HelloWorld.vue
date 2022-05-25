@@ -9,7 +9,7 @@ import Banner from './Banner.vue'
 <div>
     <Banner></Banner>
   <div class="info">
-    <div class=" mx-32 my-32 w-2/5 h-56 bg-gradient-to-r from-emerald-300 to-hoved shadow-md shadow-black rounded-2xl">
+    <div class="mx-32 my-32 w-2/5 h-56 bg-gradient-to-r from-emerald-300 to-hoved shadow-md shadow-black rounded-2xl">
       <div>
         <ul>
           <li>
@@ -54,5 +54,6 @@ import Banner from './Banner.vue'
   shadow-md shadow-black
 
 }
+
 
 </style>

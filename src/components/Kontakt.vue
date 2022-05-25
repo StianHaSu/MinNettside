@@ -10,7 +10,7 @@ function goToGithub(){
 
 </script>
 <template>
-<div class ="">
+<div>
     <div><banner class="sticky"></banner></div>
     <div class="kontaktInfo">
         <div>
