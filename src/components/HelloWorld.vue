@@ -35,7 +35,7 @@ import Banner from './Banner.vue'
         </ul>
       </div>
       <div class="Portrett">
-          <img src="../../public/meg.jpeg">
+          <img class="BildeSrc" src="../../public/meg.jpeg">
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@ import Banner from './Banner.vue'
 
 .BoksEn {
   @apply
-  py-2 mx-32 my-14 max-w-xl 
+  py-2 mx-32 my-14 max-w-xl text-center
   bg-gradient-to-r from-emerald-300 
   to-hoved shadow-md shadow-black rounded-2xl
 }
@@ -69,7 +69,7 @@ import Banner from './Banner.vue'
     @apply 
     float-right mx-32 -my-72 
     bg-gradient-to-r from-blue-400 via-emerald-300 to-hoved
-    py-2 px-2 rounded-lg border-separate border-4 border-emerald-200
+    py-2 px-2 rounded-lg border-4 border-emerald-200
     hover:animate-pulse shadow-2xl shadow-emerald-600
     
 }
@@ -85,33 +85,24 @@ import Banner from './Banner.vue'
       flex justify-center w-screen
       mx-0 px-2
     }
-
-    .Posisjon {
-      @apply
-      object-left-top
-    }
   
     .BoksEn {
       @apply
       w-screen mx-0 
-      object-none
-      object-top
+      flex justify-start
       px-2
     }
     .BoksTo {
       @apply
-      object-none
-      object-center
+      flex justify-center
       mx-0
       px-2 w-screen
     }
 
     .Portrett {
       @apply
+      py-1 px-1
       my-0 
-      object-none
-      object-bottom
-      
     }
      
 }
