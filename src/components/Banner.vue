@@ -43,7 +43,7 @@
 @media only screen and (max-width: 800px) {
     .MenyKnapper {
         @apply
-        invisible
+        hidden
     }
 }
 
