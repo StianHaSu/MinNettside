@@ -12,6 +12,6 @@ body {
 @media only screen and (max-width: 480){
     body {
         @apply
-        scroll-mx-0
+        scroll-mr-0 scroll-ml-0
     }
 }
