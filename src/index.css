@@ -4,5 +4,4 @@
 body {
     @apply
     bg-gradient-to-r from-emerald-100 to-cyan-200 h-screen
-    min-w-[480px] max-w-[3000px]
 } 
