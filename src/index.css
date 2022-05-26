@@ -12,6 +12,6 @@ body {
 @media only screen and (max-width: 480){
     body {
         @apply
-        scroll-mr-0 scroll-ml-0
+        overflow-x-hidden
     }
 }
