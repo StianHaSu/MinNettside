@@ -9,7 +9,7 @@
             <div>
               <button @click="router.push({ name: 'Hjemskjerm' })"><h1 class="text-left font-mono text-4xl text-white py-2 hover:scale-105 transition ease-in-out">Stian Sundkvist</h1></button>
             </div>
-            <div>
+            <div class="MenyKnapper">
               <ul class="flex space-x-6 text-white font-mono text-4xl py-2">
                 <li><button @click="router.push({ name: 'Prosjektskjerm' })" class="hover:underline hover:scale-105 transition ease-in-out">prosjekter</button></li>
                 <li><button @click="router.push({ name: 'Omskjerm' })" class="hover:underline hover:scale-110 transition ease-in-out">om</button></li>
@@ -22,3 +22,12 @@
       </div>
     </div>
 </template>
+
+<style>
+@media screen and (min width: 1000px) {
+    .MenyKnapper {
+        @apply
+        visible
+    }
+}
+</style>
