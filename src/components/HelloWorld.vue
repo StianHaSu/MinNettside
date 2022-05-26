@@ -9,8 +9,8 @@ import Banner from './Banner.vue'
 <div>
     <Banner></Banner>
   <div class="info">
-    <div >
-      <div class="py-2 mx-32 my-14 max-w-xl bg-gradient-to-r from-emerald-300 to-hoved shadow-md shadow-black rounded-2xl">
+    <div class="Posisjon">
+      <div class="BoksEn">
         <ul>
           <li>
             <h2 class="text-white font-mono py-2 text-3xl underline">Velkommen til min nettside!</h2>
@@ -34,6 +34,9 @@ import Banner from './Banner.vue'
           </h2></li>
         </ul>
       </div>
+      <div class="Portrett">
+          <img src="../../public/meg.jpeg">
+      </div>
     </div>
   </div>
 </div>
@@ -45,6 +48,13 @@ import Banner from './Banner.vue'
   @tailwind utilities;
 
 
+.BoksEn {
+  @apply
+  py-2 mx-32 my-14 max-w-xl 
+  bg-gradient-to-r from-emerald-300 
+  to-hoved shadow-md shadow-black rounded-2xl
+}
+
 .BoksTo {
   @apply
   my-12 mx-32 max-w-xl bg-gradient-to-r
@@ -55,10 +65,59 @@ import Banner from './Banner.vue'
 
 }
 
+.Portrett {
+    @apply 
+    float-right mx-32 -my-72 
+    bg-gradient-to-r from-blue-400 via-emerald-300 to-hoved
+    py-2 px-2 rounded-lg border-separate border-4 border-emerald-200
+    hover:animate-pulse shadow-2xl shadow-emerald-600
+    
+}
+
 .info {
   @apply
   text-center
 }
+
+@media only screen and (max-width: 1100px){
+    .info {
+      @apply
+      flex justify-center w-screen
+      mx-0 px-2
+    }
+
+    .Posisjon {
+      @apply
+      object-left-top
+    }
+  
+    .BoksEn {
+      @apply
+      w-screen mx-0 
+      object-none
+      object-top
+      px-2
+    }
+    .BoksTo {
+      @apply
+      object-none
+      object-center
+      mx-0
+      px-2 w-screen
+    }
+
+    .Portrett {
+      @apply
+      my-0 
+      object-none
+      object-bottom
+      
+    }
+     
+}
+
+
+
 
 
 

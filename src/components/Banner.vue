@@ -4,7 +4,7 @@
 <template>
     <div class="sticky top-0">
       <div class="mx-3 bg-gradient-to-tr from-emerald-400 to-hoved rounded-b-3xl shadow-lg">
-        <div class="max-w-6xl mx-auto px-3 py-8">
+        <div class="BannerH">
           <div class="flex justify-between">
             <div>
               <button @click="router.push({ name: 'Hjemskjerm' })"><h1 class="text-left font-mono text-4xl text-white py-2 hover:scale-105 transition ease-in-out">Stian Sundkvist</h1></button>
@@ -28,7 +28,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@media only screen and (max-width: 480px) {
+.BannerH {
+    @apply
+    max-w-6xl mx-auto px-3 py-8
+}
+
+@media only screen and (max-width: 900px){
+    .BannerH {
+        @apply
+        py-0
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .MenyKnapper {
         @apply
         invisible
@@ -39,6 +51,7 @@
     .MenyKnapper {
         @apply
         visible
+        text-center
     }
 }
 </style>
