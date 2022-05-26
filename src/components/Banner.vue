@@ -30,4 +30,11 @@
         visible
     }
 }
+
+@media screen and (max width: 480) {
+    .MenyKnapper {
+        @apply
+        invisible
+    }
+}
 </style>
