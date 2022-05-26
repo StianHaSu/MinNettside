@@ -51,7 +51,6 @@
     .MenyKnapper {
         @apply
         visible
-        text-center
     }
 }
 </style>
