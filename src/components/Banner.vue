@@ -24,17 +24,21 @@
 </template>
 
 <style>
-@media screen and (min width: 1000px) {
-    .MenyKnapper {
-        @apply
-        visible
-    }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@media screen and (max width: 480) {
+@media only screen and (max-width: 480px) {
     .MenyKnapper {
         @apply
         invisible
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .MenyKnapper {
+        @apply
+        visible
     }
 }
 </style>
