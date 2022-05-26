@@ -6,4 +6,12 @@
 body {
     @apply
     bg-gradient-to-r from-emerald-100 to-cyan-200 h-screen
+
 } 
+
+@media only screen and (max-width: 480){
+    body {
+        @apply
+        scroll-mx-0
+    }
+}
