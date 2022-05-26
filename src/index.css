@@ -9,7 +9,7 @@ body {
 
 } 
 
-@media only screen and (max-width: 480){
+@media only screen and (max-width: 480px){
     body {
         @apply
         overflow-x-hidden
