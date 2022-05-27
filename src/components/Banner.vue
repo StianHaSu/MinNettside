@@ -17,6 +17,9 @@
                 <li><button @click="router.push({ name: 'Kontaktskjerm' })" class="hover:underline hover:scale-105 transition ease-in-out">kontakt</button></li>
               </ul>
             </div>
+            <div class="MobilMeny">
+                <button><h1>|||</h1></button>
+            </div>
           </div>
         </div>
       </div>
@@ -33,6 +36,16 @@
     max-w-6xl mx-auto px-3 py-8
 }
 
+.MobilMeny {
+    @apply
+    text-3xl
+    font-sans
+    font-bold
+    text-white
+    mx-20 rotate-[90deg]
+    hover:scale-110
+}
+
 @media only screen and (max-width: 900px){
     .BannerH {
         @apply
@@ -44,13 +57,34 @@
     .MenyKnapper {
         @apply
         hidden
+    }  
+
+    .MobilMeny {
+        @apply
+        visible
     }
 }
+
+
 
 @media only screen and (min-width: 1000px) {
     .MenyKnapper {
         @apply
         visible
     }
+
+    .MobilMeny {
+        @apply
+        hidden
+    }
 }
+
+@media only screen and (min-width: 800px) {
+    .MobilMeny {
+        @apply
+        hidden
+    }
+    
+}
+
 </style>
