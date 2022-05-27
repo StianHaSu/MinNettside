@@ -88,14 +88,14 @@ import Banner from './Banner.vue'
   
     .BoksEn {
       @apply
-      w-screen mx-4 
+      w-screen mx-8 
       flex justify-start
-      px-2
+      px-2 
     }
     .BoksTo {
       @apply
       flex justify-center
-      mx-4
+      mx-8
       px-2 w-screen
     }
 

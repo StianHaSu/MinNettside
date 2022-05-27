@@ -47,7 +47,7 @@
     text-2xl 
     font-mono
     bg-gradient-to-r from-emerald-300 to-hoved
-    rounded-md mx-72 h-screen
+    rounded-md mx-72 
    
 }
 
@@ -61,5 +61,44 @@
     my-20
 }
 
+@media only screen and (max-width: 1100px) {
+    .Hoved {
+        @apply
+        flex 
+        justify-center
+        mx-2
+    }
+    .Text {
+        @apply
+        text-center
+        my-2 mx-2
+        rounded-3xl
+        w-screen
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .Avsnitt {
+        @apply
+        text-sm
+        px-4
+        mx-2
+        my-2
+    }
+    
+    .Text {
+        @apply
+        py-4
+        my-2
+        px-2
+    }
+
+    .Overskrift {
+        @apply
+        text-3xl
+        mx-2
+        my-4
+    }
+}
 
 </style>
