@@ -13,14 +13,14 @@ function goToGithub(){
 <div>
     <div><banner class="sticky"></banner></div>
     <div class="kontaktInfo">
-        <div>
-            <ul class="flex justify-center space-x-12 my-36">
-                <li class="my-10"><button @click="goToLinkedIn()"><img class="linkedIn" src="../../public/linkedin_logo.png" alt="Lenke til linkedIn profil"/></button></li>
+        <div class="flex justify-center">
+            <ul class="SosialeMedier">
+                <li class="my-8"><button @click="goToLinkedIn()"><img class="linkedIn" src="../../public/linkedin_logo.png" alt="Lenke til linkedIn profil"/></button></li>
                 <li class="my-2"><button @click="goToGithub()"><img class="GitHub" src="../../public/GitHub-Logo.png" alt="Lenke til Github profil"></button></li>
             </ul>
         </div>
-        <div>
-             <ul class="py-12"> 
+        <div class="Kontakt">
+             <ul> 
                 <li>tlf: 94181370</li>
                 <li>e-post: stian.sundkv@gmail.com</li>
             </ul>
@@ -31,17 +31,29 @@ function goToGithub(){
 </template>
 
 <style>
+
+.Kontakt {
+    @apply
+    text-center
+}
+
 .kontaktInfo {
     @apply
     font-mono text-5xl 
     bg-gradient-to-b from-emerald-300 to-hoved mx-40 
-    py-8 px-28 my-6 
+    py-8 px-12 my-6 
     rounded-2xl border-emerald-200
     shadow-lg shadow-black
-    space-y-4 text-center
+    text-center
     ;
 }
 
+.SosialeMedier {
+    @apply
+    grid grid-cols-2
+    grid-rows-1
+    my-12
+}
 
 .linkedIn{
     @apply
@@ -55,6 +67,32 @@ function goToGithub(){
     w-44
     hover:-rotate-2
     ;
+}
+
+@media only screen and (max-width: 1050px) {
+    .kontaktInfo {
+        @apply
+        w-screen
+        mx-4 my-2 py-2
+        
+    }
+
+    .Kontakt {
+        @apply
+        text-xl
+    }
+
+    .linkedIn {
+        @apply
+        my-4 py-4
+        mx-4 px-4
+    }
+
+    .GitHub {
+        @apply
+        my-4 py-4
+        mx-4 px-4
+    }
 }
 
 

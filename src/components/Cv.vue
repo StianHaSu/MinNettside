@@ -7,7 +7,7 @@
         <div class="Innhold">  
             <div class="Logoer">
                 <div class="Sector">
-                    <div id ="SectorBilde"><img src="../../public/secto-logo.webp" alt="Sector Alarm logo"></div>
+                    <div class ="SectorBilde"><img src="../../public/secto-logo.webp" alt="Sector Alarm logo"></div>
                     <div class="SectorTekst">
                         <p class="my-8">
                             august 2021 <br> - nå
@@ -101,7 +101,7 @@
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
     .Logoer {
         @apply
         w-screen
@@ -136,21 +136,7 @@
         py-2
     }
 
-    #SectorBilde {
-        @apply
-        w-1/2
-        flex self-center
-    }
-
-    #ForsvarBilde {
-        @apply
-        w-1/2
-    }
-
-    #KiwiBilde {
-        @apply
-        w-1/2
-    }
+    
 
 }
 
