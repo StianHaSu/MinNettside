@@ -67,10 +67,11 @@
     to-hoved
     shadow-md
     rounded-3xl
-    float-right
-    py-32
-    w-3/4
+    flex justify-center
+    py-64
+    w-screen
     text-center
+    my-4
 
 
 }
