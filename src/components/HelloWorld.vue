@@ -9,12 +9,12 @@ import Banner from './Banner.vue'
 <div>
     <Banner></Banner>
   <div class="info">
-    <div class="mx-32 my-32 w-2/5 h-56 bg-gradient-to-r from-emerald-300 to-hoved shadow-md shadow-black rounded-2xl">
-      <div>
+    <div class="Posisjon">
+      <div class="BoksEn">
         <ul>
           <li>
-            <h2 class="text-white text-center font-mono py-8 text-3xl underline">Velkommen til min nettside!</h2>
-            <ul class="text-center text-xl font-mono">
+            <h2 class="text-white font-mono py-2 text-3xl underline">Velkommen til min nettside!</h2>
+            <ul class="text-xl font-mono">
               <li>
                 <h2>1. Bli kjent med prosjektene mine</h2>
                 <h2>2. Kontakt meg gjerne for spørsmål</h2>
@@ -34,6 +34,9 @@ import Banner from './Banner.vue'
           </h2></li>
         </ul>
       </div>
+      <div class="Portrett">
+          <img class="BildeSrc" src="../../public/meg.jpeg">
+      </div>
     </div>
   </div>
 </div>
@@ -45,9 +48,16 @@ import Banner from './Banner.vue'
   @tailwind utilities;
 
 
+.BoksEn {
+  @apply
+  py-2 mx-32 my-14 max-w-xl text-center
+  bg-gradient-to-r from-emerald-300 
+  to-hoved shadow-md shadow-black rounded-2xl
+}
+
 .BoksTo {
   @apply
-  my-24 bg-gradient-to-r
+  my-12 mx-32 max-w-xl bg-gradient-to-r
   from-emerald-300 to-hoved
   rounded-2xl text-center
   font-mono text-xl py-2
@@ -55,5 +65,46 @@ import Banner from './Banner.vue'
 
 }
 
+.Portrett {
+    @apply 
+    float-right mx-32 -my-72 
+    bg-gradient-to-r from-blue-400 via-emerald-300 to-hoved
+    py-2 px-2 rounded-lg border-4 border-emerald-200
+    hover:animate-pulse shadow-2xl shadow-emerald-600
+    
+}
+
+.info {
+  @apply
+  text-center
+}
+
+@media only screen and (max-width: 1100px){
+    .info {
+      @apply
+      flex justify-center w-screen
+      mx-0 px-2
+    }
+  
+    .BoksEn {
+      @apply
+      w-screen mx-4 
+      flex justify-start
+      px-2
+    }
+    .BoksTo {
+      @apply
+      flex justify-center
+      mx-4
+      px-2 w-screen
+    }
+
+    .Portrett {
+      @apply
+      py-1 px-1
+      my-0 
+    }
+     
+}
 
 </style>
