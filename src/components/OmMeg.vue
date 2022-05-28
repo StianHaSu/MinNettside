@@ -32,11 +32,10 @@
     @apply
     font-mono font-extrabold
     text-center
-    text-white text-8xl
+    text-8xl
     mx-24 my-4
-    text-transparent bg-clip-text
-    bg-gradient-to-tr
-    from-gray-500 via-emerald-400 to-hoved
+    
+   
     
 }
 
