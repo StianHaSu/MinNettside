@@ -71,11 +71,8 @@
     shadow-md
     rounded-3xl
     py-12
-    w-screen
     text-center
-    mx-auto
-
-
+    mr-6
 }
 
 .HovedBanner {
@@ -89,7 +86,8 @@
     font-sans
     font-bold
     text-white
-    mx-20 rotate-[90deg]
+    mr-12
+    rotate-[90deg]
     hover:scale-110
 }
 
