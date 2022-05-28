@@ -86,7 +86,7 @@ function goToGithub(){
     font-mono font-bold
     my-32 bg-testFarge rounded-lg 
     px-8 py-8 shadow-md shadow-black
-    mx-6
+    mx-6 bg-opacity-70
 }
 
 .KnappGH {
