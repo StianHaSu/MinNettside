@@ -7,7 +7,7 @@
         <div class ="Text">
             <div class="Avsnitt">
                 <p class="flex justify-center">
-                    Mitt navn er Stian Hallerud Sundkvist, jeg er 22 år gammel, og bor i Lillestrøm.
+                    Mitt navn er Stian Hallerud Sundkvist, jeg er 22 år gammel, og bor i Oslo.
                     Jeg studerer Informatikk: programmering og systemarkitektur på Universitetet i Oslo,
                     hvor jeg påbegynte graden min august 2021. Ved siden av studiene, jobber jeg deltid 
                     som alarmoperatør for Sector Alarm.
