@@ -27,7 +27,7 @@ import Banner from './Banner.vue'
       <div class="BoksTo">
         <ul>
           <li class="my-6"><h1 class="text-white text-3xl font-mono underline">Dette er et pågående prosjekt</h1></li>
-          <li ><h2>Dette prosjektet blå påbegynt 23.mai 2022</h2></li>
+          <li ><h2>Dette prosjektet ble påbegynt 23.mai 2022</h2></li>
           <li><h2>Hensikten med denne nettsiden er både å lære <br>
             vue + tailwind, og å vise frem ferdigheter jeg innehar
             innen programmering.

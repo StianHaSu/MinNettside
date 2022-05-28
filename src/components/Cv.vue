@@ -29,8 +29,8 @@
                         hundefører i militærpolitikompaniet, stasjoner i Bardufoss.
                         Under tjenesteperioden gjennomførte jeg en rekke oppdrag med 
                         tjenestehunden min på øvelser i Indre Troms. Mye av den daglige
-                        tjenesten gikk ut på hundetrening og patruljetjeneste. Jeg ble 
-                        også sammen med tjenestehunden min godkjent som lavineekvipasje.
+                        tjenesten gikk ut på hundetrening og patruljetjeneste. Sammen
+                        med tjenestehunden min ble jeg også godkjent som lavineekvipasje.
                     </p>
                 </div>
                 <div class="Kiwi">
@@ -41,9 +41,9 @@
                     <p class="text-sm">
                         Jeg begynte å jobbe i KIWI da jeg var 15 år gammel, hvor jeg begynte
                         med å arbeide med varepåfylling og kundehåndtering. Da jeg fylte 18 år
-                        fikk jeg også kasseansvar. Noen måneder senere fikk jeg låseansvarlig 
+                        fikk jeg også kasseansvar. Noen måneder senere ble jeg låseansvarlig 
                         og hadde da ansvar for butikken i butikksjef og assisterende butikksjefs
-                        fravær. Jeg fikk her viktig erfaring fra både oppgavedelegering og kundehåndtering. 
+                        fravær. Her fikk jeg viktig erfaring fra både oppgavedelegering og kundehåndtering. 
 
                     </p>
                 </div>
