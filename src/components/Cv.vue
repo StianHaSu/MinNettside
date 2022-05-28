@@ -58,7 +58,7 @@
     @apply
     text-8xl font-mono font-extrabold
     text-transparent bg-clip-text
-    bg-gradient-to-tr from-gray-500 via-emerald-400 to-hoved
+    text-black
 }
 
 .CvHoved{
@@ -66,16 +66,11 @@
     text-center my-20
 }
 
-.Innhold {
-    @apply
-    flex justify-center
-}
-
 .Logoer {
     @apply
-    grid grid-rows-1 mx-72
+    grid grid-rows-1 mx-auto
     grid-cols-1
-    py-2 bg-gradient-to-r from-emerald-300 to-hoved
+    py-2 bg-green-200
     rounded-2xl
     
 }
@@ -98,6 +93,12 @@
     mx-72 my-8 
     font-mono font-bold
     text-2xl
+
+}
+
+#SectorBilde {
+    @apply
+    mx-auto
 
 }
 
