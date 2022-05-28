@@ -58,7 +58,7 @@ function goToGithub(){
                     Github <br>
                     </scoped> <br>
 
-                    Besøk gjern <button class="KnappGH" @click="goToGithub()">Github</button> profilen min for å se kildekoden til denne
+                    Besøk gjerne <button class="KnappGH" @click="goToGithub()">Github</button> profilen min for å se kildekoden til denne
                     nettsiden!
                 </p>
             </li>
