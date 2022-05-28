@@ -40,10 +40,11 @@ function goToGithub(){
 .kontaktInfo {
     @apply
     font-mono text-5xl 
-    bg-gradient-to-b from-emerald-300 to-hoved mx-40 
+    bg-testFarge bg-opacity-70
+     mx-40 
     py-8 px-12 my-6 
-    rounded-2xl border-emerald-200
-    shadow-lg shadow-black
+    rounded-2xl
+    shadow-sm shadow-black
     text-center
     ;
 }
@@ -73,7 +74,8 @@ function goToGithub(){
     .kontaktInfo {
         @apply
         w-screen
-        mx-4 my-2 py-2
+        mx-auto
+        my-2 py-2
         
     }
 

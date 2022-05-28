@@ -8,6 +8,8 @@ module.exports = {
       colors: {
         hoved : `#03998e`,
         krem : `#fff6ea`,
+        testFarge: '#efabab',
+        bannerFarge: '#28E4A1',
       }
     },
   },

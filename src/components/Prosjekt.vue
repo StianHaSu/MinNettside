@@ -7,10 +7,10 @@ function goToGithub(){
     <div class="Prosjekter">
         <ul class="Pictures">
             <div class="KrukkeDiv">
-                <li id ="BildeKrukke" class="w-1/3 my-10"><img class="rounded-2xl ring-hoved shadow-lg shadow-black" src="../../public/prosjektTo.png" alt="Prosjekt to"></li>
-                <li id="InfoKrukke" class="float-right -my-72 mx-30 bg-gradient-to-b from-emerald-400 to-hoved rounded-lg px-8 py-8 shadow-md shadow-black">
-                    <h1 class="flex justify-center font-mono font-bold text-3xl text-white underline ">Tell pins i krukken</h1>
-                    <p class=" font-mono text-lg font-bold text-white">
+                <li id ="BildeKrukke" class="w-1/3 my-10"><img class="rounded-2xl ring-hoved shadow-sm shadow-black" src="../../public/prosjektTo.png" alt="Prosjekt to"></li>
+                <li id="InfoKrukke" class="float-right -my-72 mx-30 bg-green-200 bg-opacity-70 rounded-lg px-8 py-8 shadow-md shadow-black">
+                    <h1 class="flex justify-center font-mono font-bold text-3xl  underline ">Tell pins i krukken</h1>
+                    <p class=" font-mono text-lg font-bold">
                         Dette prosjektet utviklet jeg for ettermiddagen@ifi, som er en karrieredag<br>
                         som gjennomføres hvert år på høstsemesteret. Jeg lagde et svarprogram for å<br>
                         avgi svar til konkurransene vi avholdt på standen vår. Prosjektet er laget <br>
@@ -20,9 +20,9 @@ function goToGithub(){
             </div>
             <div class="GraaDiv">
                 <li id="GraaBilde" class="w-1/3 float-right my-14"><img class="rounded-2xl ring-2 ring-hoved shadow-lg shadow-black" src="../../public/prosjektEn.png" alt="Prosjekt en"></li>
-                <li id="GraaInfo" class="float-left my-28 mx-30 bg-gradient-to-t from-emerald-400 to-hoved rounded-lg px-8 py-8 shadow-md shadow-black">
-                     <h1 class=" flex justify-center font-mono font-bold text-3xl text-white underline ">Finn de grå</h1>
-                     <p class="font-mono text-lg font-bold text-white">
+                <li id="GraaInfo" class="float-left my-28 mx-30 bg-testFarge bg-opacity-70 rounded-lg px-8 py-8 shadow-md shadow-black">
+                     <h1 class=" flex justify-center font-mono font-bold text-3xl  underline ">Finn de grå</h1>
+                     <p class="font-mono text-lg font-bold ">
                         Dette prosjektet er nesten en kopi av prosjektet over, og ble også laget for<br>
                         konkurransene vi avholdt på karrieredagen ettermiddagen@ifi. <br>
                         Begge disse ble tatt i bruk under karrierredagen og dette er i likhet med <br>
@@ -32,9 +32,9 @@ function goToGithub(){
             </div>
             <div class="ZombieDiv">
                 <li id="BildeZombie" class="w-1/3"> <img class="rounded-2xl ring-2 ring-hoved shadow-lg shadow-black" src="../../public/prosjektTre.png"> </li>
-                <li id="InfoZombie" class="float-right -my-[375px] mx-30 bg-gradient-to-t from-emerald-400 to-hoved rounded-lg px-8 py-8 shadow-md shadow-black">
-                    <h1 class="flex justify-center font-mono font-bold text-3xl text-white underline ">Zombie Rows</h1>
-                    <p class="font-mono text-lg font-bold text-white">
+                <li id="InfoZombie" class="float-right -my-[375px] mx-30 bg-green-200 bg-opacity-70 rounded-lg px-8 py-8 shadow-md shadow-black">
+                    <h1 class="flex justify-center font-mono font-bold text-3xl  underline ">Zombie Rows</h1>
+                    <p class="font-mono text-lg font-bold ">
                         Dette er en pågående prosjekt jeg jobber med i java. Zombie Rows er et spill <br>
                         hvor man bruker tastene 1,2,3,4 og 5 for å skyte rutene som kommer mot deg. <br>
                         Man kan bruke opp og ned tastene for å bytte mellom å bruke "kanon" og <br>
@@ -83,8 +83,8 @@ function goToGithub(){
 .Nettside {
     @apply
     space-y-10
-    font-mono font-bold text-white
-    my-32 bg-gradient-to-b from-emerald-400 to-hoved rounded-lg 
+    font-mono font-bold
+    my-32 bg-testFarge rounded-lg 
     px-8 py-8 shadow-md shadow-black
     mx-6
 }
@@ -111,17 +111,18 @@ function goToGithub(){
 
     #BildeKrukke {
         @apply
-        my-0 mx-0
-        w-screen
+        my-0 mx-auto
+        w-5/6
         py-0
 
     }
 
     #InfoKrukke {
         @apply
-        my-0 mx-0
+        my-0 mx-auto
+        mt-6
         py-2 
-        w-screen
+        w-5/6
         text-center
 
     }
@@ -129,23 +130,23 @@ function goToGithub(){
     .KrukkeDiv {
         @apply
         grid grid-rows-1
-        my-8
+        my-8 
     }
 
     #GraaBilde {
         @apply
         flex-none
-        my-0 mx-0
-        w-screen
-
+        w-5/6
+        my-0 mx-auto
     }
 
     #GraaInfo {
         @apply
         float-none
-        my-0 mx-0
+        my-0 mx-auto
         py-2 
-        w-screen
+        w-5/6
+        mt-6
         text-center
 
     }
@@ -160,16 +161,17 @@ function goToGithub(){
     #BildeZombie {
         @apply
         flex-none
-        my-0 mx-0
-        w-screen
+        my-0 mx-auto
+        w-5/6
     }
 
     #InfoZombie {
         @apply
         float-none
-        my-0 mx-0
+        my-0 mx-auto
         py-2 
-        w-screen
+        w-5/6
+        mt-6
         text-center
     }
 

@@ -2,13 +2,17 @@
         export default {
         methods: {
             visMobilMeny() {
-                const dropD = Array.from(document.getElementsByClassName('MobilValg') as HTMLCollectionOf<HTMLElement>)[0];
+                var dropD = Array.from(document.getElementsByClassName('MobilValg') as HTMLCollectionOf<HTMLElement>)[0];
+                var hoved = Array.from(document.getElementsByClassName('HovedBanner') as HTMLCollectionOf<HTMLElement>)[0];
                 if (window.getComputedStyle(dropD).display === "none") {
                     dropD.setAttribute("style", "visibility: visible");
                     dropD.setAttribute("style", "display: inline");
+                    hoved.setAttribute("style", "border-bottom-width: 1px");
+                    
                 } else {
                     dropD.setAttribute("style", "visibility: invisible");
                     dropD.setAttribute("style", "display: none");
+                    hoved.setAttribute("style", "border-bottom-width: 0px");
                 }
             },
         },
@@ -16,11 +20,11 @@
 </script>
 <template>
     <div class="sticky top-0">
-      <div class="mx-3 bg-gradient-to-tr from-emerald-400 to-hoved rounded-b-3xl shadow-lg">
+      <div class="mx-3 bg-bannerFarge rounded-b-3xl shadow-lg">
         <div class="BannerH">
-          <div class="flex justify-between">
+          <div class="HovedBanner">
             <div>
-              <button @click="$router.push({ name: 'Hjemskjerm' })"><h1 class="text-left font-mono text-4xl text-white py-2 hover:scale-105 transition ease-in-out">Stian Sundkvist</h1></button>
+              <button @click="$router.push({ name: 'Hjemskjerm' })"><h1 class=" ml-6 text-left font-mono text-4xl py-2 hover:scale-105 transition ease-in-out">Stian Sundkvist</h1></button>
             </div>
             <div class="MenyKnapper">
               <ul class="flex space-x-6 text-white font-mono text-4xl py-2">
@@ -37,11 +41,12 @@
             </div>
           </div>
           <div class="MobilValg">
-              <ul class="grid grid-rows-4 text-white text-bold font-mono text-lg py-2">
-                <li><button @click="$router.push({ name: 'Prosjektskjerm' })" class="hover:underline hover:scale-105 transition ease-in-out">prosjekter</button></li>
-                <li><button @click="$router.push({ name: 'Omskjerm' })" class="hover:underline hover:scale-110 transition ease-in-out">om</button></li>
-                <li><button @click="$router.push({ name: 'CvSkjerm' })" class="hover:underline hover:scale-110 transition ease-in-out">cv</button></li>
-                <li><button @click="$router.push({ name: 'Kontaktskjerm' })" class="hover:underline hover:scale-105 transition ease-in-out">kontakt</button></li>
+              <ul class="text-white text-bold font-mono text-lg py-2">
+                <div class="border-b-2 w-4/5 mx-auto py-2 pt-8"><li><button @click="$router.push({ name: 'Prosjektskjerm' })" class="hover:underline hover:scale-105 transition ease-in-out text-2xl">prosjekter</button></li></div>
+                <div class="border-b-2 w-4/5 mx-auto py-2"><li><button @click="$router.push({ name: 'Kontaktskjerm' })" class="hover:underline hover:scale-105 transition ease-in-out text-2xl">kontakt</button></li></div>
+                <div class="border-b-2 w-4/5 mx-auto py-2"><li><button @click="$router.push({ name: 'Omskjerm' })" class="hover:underline hover:scale-110 transition ease-in-out text-2xl">om</button></li></div>
+                <div class="border-b-2 w-4/5 mx-auto py-2"><li><button @click="$router.push({ name: 'CvSkjerm' })" class="hover:underline hover:scale-110 transition ease-in-out text-2xl">cv</button></li></div>
+                <div class="pb-4"></div>
               </ul>
             </div>
         </div>
@@ -62,18 +67,20 @@
 .MobilValg {
     @apply
     hidden
-    bg-gradient-to-b
-    from-emerald-400
-    to-hoved
+    bg-bannerFarge
     shadow-md
     rounded-3xl
-    flex justify-center
-    py-64
+    py-12
     w-screen
     text-center
-    my-4
+    mx-auto
 
 
+}
+
+.HovedBanner {
+    @apply
+    flex justify-between
 }
 
 .MobilMeny {

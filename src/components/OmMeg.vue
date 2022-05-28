@@ -46,8 +46,10 @@
     py-14 px-14
     text-2xl 
     font-mono
-    bg-gradient-to-r from-emerald-300 to-hoved
-    rounded-md mx-72 
+    bg-green-200
+    bg-opacity-75
+    rounded-3xl mx-72 
+    shadow-sm shadow-black
    
 }
 
