@@ -6,10 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        hoved : `#03998e`,
-        krem : `#fff6ea`,
-        testFarge: '#efabab',
-        bannerFarge: '#28E4A1',
+        hoved : `#f6fff8`,
+        boksFargeEn : `#eaf4f4`,
+        boksFargeTo: '#cce3de',
+        boksFargeTre: `#a4c3b2`,
+        bannerFarge: '#6b9080',
       }
     },
   },

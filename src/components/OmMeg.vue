@@ -45,8 +45,8 @@
     py-14 px-14
     text-2xl 
     font-mono
-    bg-green-200
-    bg-opacity-75
+    bg-boksFargeEn
+    bg-opacity-60
     rounded-3xl mx-72 
     shadow-sm shadow-black
    

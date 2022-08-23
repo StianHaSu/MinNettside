@@ -19,12 +19,12 @@
     };
 </script>
 <template>
-    <div class="sticky top-0">
+    <div class="sticky top-0 mb-2">
       <div class="mx-3 bg-bannerFarge rounded-b-3xl shadow-lg">
         <div class="BannerH">
           <div class="HovedBanner">
             <div>
-              <button @click="$router.push({ name: 'Hjemskjerm' })"><h1 class=" ml-6 text-left font-mono text-4xl py-2 hover:scale-105 transition ease-in-out">Stian Sundkvist</h1></button>
+              <button @click="$router.push({ name: 'Hjemskjerm' })"><h1 class=" ml-6 text-left font-mono text-4xl py-2  hover:scale-105 transition ease-in-out">Stian Sundkvist</h1></button>
             </div>
             <div class="MenyKnapper">
               <ul class="flex space-x-6 text-white font-mono text-4xl py-2">
@@ -62,6 +62,7 @@
 .BannerH {
     @apply
     max-w-6xl mx-auto px-3 py-8
+    text-white
 }
 
 .MobilValg {

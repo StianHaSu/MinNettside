@@ -40,7 +40,7 @@ function goToGithub(){
 .kontaktInfo {
     @apply
     font-mono text-5xl 
-    bg-testFarge bg-opacity-70
+    bg-hoved bg-opacity-70
      mx-40 
     py-8 px-12 my-6 
     rounded-2xl
