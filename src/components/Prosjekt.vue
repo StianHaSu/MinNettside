@@ -8,7 +8,7 @@ function goToGithub(){
         <ul class="Pictures">
             <div class="KrukkeDiv">
                 <li id ="BildeKrukke" class="w-1/3 my-10"><img class="rounded-2xl ring-hoved shadow-sm shadow-black" src="../../public/prosjektTo.png" alt="Prosjekt to"></li>
-                <li id="InfoKrukke" class="float-right -my-72 mx-30 bg-green-200 bg-opacity-70 rounded-lg px-8 py-8 shadow-md shadow-black">
+                <li id="InfoKrukke" class="float-right -my-72 mx-30 bg-boksFargeEn bg-opacity-60 rounded-lg px-8 py-8">
                     <h1 class="flex justify-center font-mono font-bold text-3xl  underline ">Tell pins i krukken</h1>
                     <p class=" font-mono text-lg font-bold">
                         Dette prosjektet utviklet jeg for ettermiddagen@ifi, som er en karrieredag<br>
@@ -20,7 +20,7 @@ function goToGithub(){
             </div>
             <div class="GraaDiv">
                 <li id="GraaBilde" class="w-1/3 float-right my-14"><img class="rounded-2xl ring-2 ring-hoved shadow-lg shadow-black" src="../../public/prosjektEn.png" alt="Prosjekt en"></li>
-                <li id="GraaInfo" class="float-left my-28 mx-30 bg-testFarge bg-opacity-70 rounded-lg px-8 py-8 shadow-md shadow-black">
+                <li id="GraaInfo" class="float-left my-28 mx-30 bg-boksFargeTo bg-opacity-50 rounded-lg px-8 py-8">
                      <h1 class=" flex justify-center font-mono font-bold text-3xl  underline ">Finn de grå</h1>
                      <p class="font-mono text-lg font-bold ">
                         Dette prosjektet er nesten en kopi av prosjektet over, og ble også laget for<br>
@@ -32,7 +32,7 @@ function goToGithub(){
             </div>
             <div class="ZombieDiv">
                 <li id="BildeZombie" class="w-1/3"> <img class="rounded-2xl ring-2 ring-hoved shadow-lg shadow-black" src="../../public/prosjektTre.png"> </li>
-                <li id="InfoZombie" class="float-right -my-[375px] mx-30 bg-green-200 bg-opacity-70 rounded-lg px-8 py-8 shadow-md shadow-black">
+                <li id="InfoZombie" class="float-right -my-[375px] mx-30 bg-boksFargeTre bg-opacity-40 rounded-lg px-8 py-8">
                     <h1 class="flex justify-center font-mono font-bold text-3xl  underline ">Zombie Rows</h1>
                     <p class="font-mono text-lg font-bold ">
                         Dette er en pågående prosjekt jeg jobber med i java. Zombie Rows er et spill <br>
@@ -84,9 +84,9 @@ function goToGithub(){
     @apply
     space-y-10
     font-mono font-bold
-    my-32 bg-testFarge rounded-lg 
-    px-8 py-8 shadow-md shadow-black
-    mx-6 bg-opacity-70
+    my-32 bg-boksFargeEn rounded-lg 
+    px-8 py-8 
+    mx-6 bg-opacity-60
 }
 
 .KnappGH {
@@ -122,7 +122,7 @@ function goToGithub(){
         my-0 mx-auto
         mt-6
         py-2 
-        w-5/6
+        w-screen
         text-center
 
     }
@@ -145,7 +145,7 @@ function goToGithub(){
         float-none
         my-0 mx-auto
         py-2 
-        w-5/6
+        w-screen
         mt-6
         text-center
 
@@ -170,7 +170,7 @@ function goToGithub(){
         float-none
         my-0 mx-auto
         py-2 
-        w-5/6
+        w-screen
         mt-6
         text-center
     }
@@ -180,6 +180,11 @@ function goToGithub(){
         grid grid-rows-1
         grid-flow-row-dense
         my-8
+    }
+
+    .Nettside{
+        @apply
+        w-screen
     }
 
 }

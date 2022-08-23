@@ -9,6 +9,4 @@
 
 </style>
 
-<head>
-</head>
 

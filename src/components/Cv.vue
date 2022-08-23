@@ -70,7 +70,8 @@
     @apply
     grid grid-rows-1 mx-auto
     grid-cols-1
-    py-2 bg-green-200
+    py-2 bg-boksFargeTo
+    bg-opacity-50
     rounded-2xl
     
 }

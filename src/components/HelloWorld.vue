@@ -1,15 +1,45 @@
 <script setup lang="ts">
 import router from '../router/index'
-import BannerVue from './Banner.vue';
 import Banner from './Banner.vue'
+
+methods: {
+  var bildeArray = ["en","to","tre"];
+  var counter = 0;
+
+  function nesteBilde () {
+    var bilde = bildeArray[counter];
+    if (counter === 0) {
+      var forrige = bildeArray[2];
+    } else {var forrige = bildeArray[counter-1];}
+
+    var skalFjernes = document.getElementById(forrige) as HTMLDivElement;
+    var skalVises = document.getElementById(bilde) as HTMLDivElement;
+    
+    skalFjernes.setAttribute("style", "display: none; ");
+
+    skalVises.setAttribute("style", "display: inline;");
+    
+    if (counter < 2) counter++;
+    else counter = 0;
+    
+  }
+    
+  var theRunner = setInterval( function(){
+    nesteBilde();
+  }, 5000);
+
+  theRunner
+}
+
+
 </script>
 
 <template>
   <link rel="stylesheet" href=".src/index.css">
 <div>
-    <Banner></Banner>
   <div class="info">
-    <div class="Posisjon">
+    <div class="Bilde"><img src="../../public/Slange.png" alt=""></div>
+    <div class="PosisjonTo">
       <div class="BoksEn">
         <ul>
           <li>
@@ -34,9 +64,6 @@ import Banner from './Banner.vue'
           </h2></li>
         </ul>
       </div>
-      <div class="Portrett">
-          <img class="BildeSrc" src="../../public/meg.jpeg">
-      </div>
     </div>
   </div>
 </div>
@@ -48,65 +75,112 @@ import Banner from './Banner.vue'
   @tailwind utilities;
 
 
+.Bilde{
+  @apply
+  mx-auto
+  h-3/5
+  w-3/5
+}
+
+.Karusell {
+  @apply
+  w-8
+  my-20
+  mx-auto
+}
+
+
 .BoksEn {
   @apply
+  mb-8
   py-8 mx-32 my-14 max-w-xl text-center
-  bg-green-200
-  shadow-sm shadow-black rounded-2xl
-  bg-opacity-70
+  bg-boksFargeEn
+  shadow-black rounded-2xl
+  bg-opacity-60 
+  
 }
 
 .BoksTo {
   @apply
+
   my-12 mx-32 max-w-xl 
   py-6
-  bg-testFarge
-  bg-opacity-75
+  bg-boksFargeTo
+  bg-opacity-50
   px-4
   rounded-2xl text-center
   font-mono text-xl 
-  shadow-sm shadow-black
+ shadow-black
 
 }
 
-.Portrett {
-    @apply 
-    float-right mx-32 -my-72 
-    py-2 px-2 rounded-lg 
-    bg-green-200
-    hover:animate-pulse shadow-2xl shadow-emerald-600
-    
-}
 
-.info {
-  @apply
-  text-center
-}
 
 @media only screen and (max-width: 1100px){
     .info {
       @apply
-      flex justify-center w-screen
+      grid-cols-11
+      grid-rows-5
+      w-screen
       mx-0 px-2
+      mt-8
     }
-  
+
+    .PosisjonTo {
+      @apply
+      row-start-3
+      row-span-2
+      col-start-2
+      col-span-9
+
+    }
+
     .BoksEn {
       @apply
-      w-screen mx-8 
-      flex justify-start
-      px-2 
+      w-auto mx-8 
+      float-none
+      px-2 my-2
     }
     .BoksTo {
       @apply
-      flex justify-center
-      mx-8
-      px-2 w-screen
+      float-none
+      mx-8 my-2
+      px-2 w-auto
     }
 
-    .Portrett {
+    .Karusell {
       @apply
+      col-span-6
+      row-span-1
+      col-start-3
+      row-start-1
       py-1 px-1
-      my-0 
+      my-0
+      mx-0
+      w-full
+      ml-8
+    }
+
+    #bildeEn {
+      @apply
+      w-3/6
+      h-4/6
+
+    }
+
+    #bildeTo {
+      @apply
+      w-3/6
+      h-4/6
+
+    }
+
+    #bildeTre {
+      @apply
+      w-3/6
+      h-4/6
+      
+
     }
      
 }
